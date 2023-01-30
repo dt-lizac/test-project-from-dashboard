@@ -10,7 +10,7 @@ attachRules:
     - context: CONTEXTLESS
       key: keptn_service
       value: $SERVICE
-   - context: CONTEXTLESS
+    - context: CONTEXTLESS
       key: keptn_project
       value: $PROJECT
     - context: CONTEXTLESS
