@@ -97,16 +97,6 @@ objectives:
             - <+20%
       weight: 1
       key_sli: false
-    - sli: throughput_(request_count)
-      displayName: Throughput (Request Count)
-      pass:
-        - criteria:
-            - '>=1000.000000'
-      warning:
-        - criteria:
-            - '>=500.000000'
-      weight: 1
-      key_sli: true
     - sli: response_time_(p95)
       displayName: Response time (P95)
       pass:
@@ -118,6 +108,16 @@ objectives:
             - '>=0.000000'
             - <2000.000000
       weight: 2
+      key_sli: true
+    - sli: throughput_(request_count)
+      displayName: Throughput (Request Count)
+      pass:
+        - criteria:
+            - '>=1000.000000'
+      warning:
+        - criteria:
+            - '>=500.000000'
+      weight: 1
       key_sli: true
 total_score:
     pass: 85%
