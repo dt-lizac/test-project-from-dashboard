@@ -1,7 +1,7 @@
 ---
 spec_version: '0.1.0'
 dtCreds: new-dynatrace   # name of the secret attached to dynatrace service
-dashboard: query
+dashboard: e243aba5-ad7d-45af-bf9a-11b3455068bc
 attachRules:
   tagRule:
   - meTypes:
