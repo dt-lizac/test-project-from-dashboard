@@ -6,3 +6,6 @@ spec:
   stages:
     - name: "quality-gate"
       test_strategy: "performance"
+  stages:
+    - name: "production"
+      test_strategy: "performance"
